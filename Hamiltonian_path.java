@@ -1,3 +1,35 @@
+import java.uti.*;
+class GFG
+{
+    public static void main(String args[])throws IOException
+    {
+        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(read.readLine());
+
+        while(t-- > 0)
+        {
+            String input_line[] = read.readLine().trim().split("\\s+");
+            int N = Integer.parseInt(input_line[0]);
+            int M = Integer.parseInt(input_line[1]);
+
+            input_line = read.readLine().trim().split("\\s+");
+            ArrayList<ArrayList<Integer>> Edges = new ArrayList<ArrayList<Integer>>();
+            for(int i = 0;i < M;i++)
+            {
+                ArrayList<Integer> e = new ArrayList<Integer>();
+                e.add(Integer.parseInt(input_line[2*i]));
+                e.add(Integer.parseInt(input_line[2*i+1]));
+                Edges.add(e);
+            }
+            Solution ob = new Solution();
+            if(ob.check(N, M, Edges))
+                System.out.println(1);
+            else
+                System.out.println(0);
+        }
+    }
+}
+
 ArrayList<Integer> al[]=new ArrayList[N+1];
       
       for(int i=0;i<N+1;i++)
