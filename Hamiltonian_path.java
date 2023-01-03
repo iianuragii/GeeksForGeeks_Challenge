@@ -30,7 +30,11 @@ class GFG
     }
 }
 
-ArrayList<Integer> al[]=new ArrayList[N+1];
+class Solution 
+{ 
+    boolean check(int N, int M, ArrayList<ArrayList<Integer>> Edges) 
+    { 
+      ArrayList<Integer> al[]=new ArrayList[N+1];
       
       for(int i=0;i<N+1;i++)
           al[i]=new ArrayList<>();
