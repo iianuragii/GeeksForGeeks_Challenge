@@ -1,5 +1,5 @@
 import java.uti.*;
-class GFG
+class Swoc
 {
     public static void main(String args[])throws IOException
     {
